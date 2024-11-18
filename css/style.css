@@ -1,0 +1,917 @@
+/* These Css are applicable for each section */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+img, svg {
+  vertical-align: middle;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: auto !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* common css end*/
+
+
+/* roduct css start */
+
+@font-face{
+  font-family: "ABC Favorit Variable";
+  font-weight: 700;
+  src: url('../font/ABCFavorit-Bold.woff2') format('woff2'),
+       url('../font/ABCFavorit-Bold.woff') format('woff');
+}
+
+
+.pf-common-heading{
+  color: #444;
+  font-family: "ABC Favorit Variable";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  max-width: 660px;
+}
+
+.pf-sub-heading{
+  color: #AAA;
+  font-family: "ABC Favorit Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  max-width: 660px;
+}
+
+.pf-shop-btn{
+  color: #FFF;
+  font-family: "ABC Favorit";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  background: #74663E;
+  padding: 12.5px 42px;
+  border-radius: 7px;
+  transition: all linear .3s;
+  }
+
+  .pf-shop-btn:hover{
+    background: #ad9759;
+  }
+
+  .pf-essential-product-section 
+  .pf-product-slide .swiper-wrapper
+  .swiper-slide .pf-product-card a img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+
+
+  .pf-essential-product-section .pf-product-heading,
+  .pf-bundle-section .pf-bundle-heading
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pf-essential-product-section{
+    padding: 40px 0;
+  }
+  .pf-essential-product-section
+  .pf-product-card a img{
+    border-radius: 10px;
+  }
+  .pf-essential-product-section .pf-product-card .pf-product-title,
+  .pf-shop-soluation-section .pf-product-card .pf-product-title{
+    color:#444;
+    font-family: "ABC Favorit Variable";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+  }
+  .pf-essential-product-section .pf-product-card .pf-product-sub-title,
+  .pf-shop-soluation-section .pf-product-card .pf-product-sub-title,
+  .pf-made-section .pf-made-science-card .pf-text .pf-made-card-head
+  {
+    color:#AAA;
+    font-family: "ABC Favorit Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+  }
+  .pf-essential-product-section .pf-product-card .pf-product-price,
+  .pf-shop-soluation-section .pf-product-card .pf-product-price{
+    color:#444;
+    font-family: "ABC Favorit Variable";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+  }
+  .pf-product-slide .pf-arrow-btns .pf-prev,
+  .pf-shop-solution .pf-arrow-btns .pf-prev,
+  .pf-bundle-section .pf-arrow-btns .pf-prev,
+  .pf-review-section .pf-arrow-btns .pf-prev,
+  .pf-customer-feedback-section .pf-arrow-btns .pf-prev{
+    border-radius: 50px;
+    border: 1px solid #666;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    margin-right: 15px;
+  }
+  .pf-product-slide .pf-arrow-btns .pf-next,
+  .pf-shop-solution .pf-arrow-btns .pf-next,
+  .pf-bundle-section .pf-arrow-btns .pf-next,
+  .pf-review-section .pf-arrow-btns .pf-next,
+  .pf-customer-feedback-section .pf-arrow-btns .pf-next{
+    border-radius: 50px;
+    border: 1px solid #666;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+  }
+  .pf-product-slide .pf-arrow-btns,
+    .pf-shop-solution .pf-arrow-btns,
+    .pf-bundle-section .pf-arrow-btns{
+    margin-top: 36px;
+  }
+
+
+
+@media (min-width: 768px) and (max-width:991px) {
+  .pf-common-heading {
+    font-size: 54px;
+    max-width: 51%;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width:767.98px) {
+  .pf-common-heading {
+    font-size: 40px;
+    max-width: 50%;
+  }
+  .pf-sub-heading{
+    font-size: 18px;
+  }
+  .pf-product-slide .pf-arrow-btns,
+  .pf-shop-solution .pf-arrow-btns,
+  .pf-bundle-section .pf-arrow-btns,
+  .pf-review-section .pf-arrow-btns{
+    margin-top: 20px;
+  }
+  .pf-essential-product-section .pf-product-heading,
+  .pf-shop-soluation-section .pf-product-heading,
+  .pf-shop-soluation-section .pf-review-heading
+   {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 575px){
+  .pf-common-heading {
+    font-size: 40px;
+    max-width: 50%;
+  }
+  .pf-sub-heading{
+    font-size: 18px;
+  }
+  .pf-product-slide .pf-arrow-btns,
+  .pf-shop-solution .pf-arrow-btns,
+  .pf-bundle-section .pf-arrow-btns {
+    margin-top: 20px;
+}
+
+.pf-essential-product-section .pf-product-heading,
+.pf-shop-soluation-section .pf-product-heading, 
+.pf-bundle-section .pf-bundle-heading{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.pf-shop-btn {
+  font-size: 18px;
+  padding: 3px 18px;
+  margin-top: 20px;
+}
+
+
+}
+
+/*product css end */
+
+
+
+/* prduct discount section start */
+.pf-prduct-discount-section{
+  padding: 80px 0;
+} 
+.pf-prduct-discount-section .pf-card-main .pf-left-text .pf-common-heading{
+  color: #74663E;
+  max-width: 480px;
+  line-height: 100%; 
+}
+.pf-prduct-discount-section .pf-card-main .pf-left-text .pf-sub-heading{
+  color: #74663E;
+  max-width: 480px;
+  line-height: 100%; 
+  font-family: "Open Sans", serif;
+  line-height: 24px; /* 24px */
+  max-width: 625px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pf-prduct-discount-section .pf-input-area input,
+.pf-news-section .pf-input-area input{
+  padding: 12px;
+  max-width: 100%;
+  width: 339px;
+  height: 55px;
+  border-radius: 7px;
+  border-color: #74663E;
+  background: transparent;
+  color: #74663E;
+  margin-right: 16px;
+}
+.pf-prduct-discount-section .pf-card-main .pf-input-area .pf-subscribe-btn,
+.pf-news-section .pf-card-main .pf-input-area .pf-subscribe-btn{
+  background: #74663E;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 7px;
+  font-family: "Open Sans", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.pf-prduct-discount-section .pf-card-main
+.pf-input-area input::placeholder{
+  color: #74663E;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.pf-btm-text{
+  color: #666;
+  font-family: "ABC Favorit Variable";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  margin-top: 16px;
+}
+.pf-news-section .pf-card-main{
+  background: #fff;
+}
+.pf-prduct-discount-section .pf-card-main
+{
+  background: #D8D6D3;
+  padding: 64px;
+  border-radius: 20px;
+}
+
+
+.pf-prduct-discount-section .pf-card-main .pf-right-img img{
+position: absolute;
+    right: -50px;
+    top: -121px;
+}
+
+.pf-prduct-discount-section .pf-card-main .pf-right-img {
+  position: relative;
+}
+
+
+@media (min-width: 1400px) {
+}
+
+@media(min-width:1200px) and (max-width:1399.98px){
+  .pf-prduct-discount-section .pf-input-area input{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .pf-prduct-discount-section .pf-card-main .pf-right-img img {
+    right: -50px;
+    top: -36px;}
+  
+}
+
+
+@media(min-width:992px) and (max-width:1199.98px){
+  .pf-prduct-discount-section .pf-input-area input{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .pf-prduct-discount-section .pf-card-main .pf-right-img img {
+    right: -50px;
+    top: 21px;
+  }
+}
+
+
+
+@media(min-width:768px) and (max-width:991.98px){
+
+  .pf-prduct-discount-section .pf-card-main .pf-right-img img{
+    position: static;
+    width: 350px;
+    height: auto;
+    margin: 30px auto 0 auto;
+    }
+
+    .pf-prduct-discount-section .pf-card-main .pf-left-text .pf-common-heading{
+      max-width: 100%;
+    }
+    .pf-prduct-discount-section .pf-card-main .pf-left-text .pf-sub-heading{
+      max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pf-prduct-discount-section .pf-card-main .pf-right-img img{
+    position: static;
+    width: 350px;
+    height: auto;
+    margin: 30px auto 0 auto;
+    }
+
+    .pf-prduct-discount-section .pf-card-main .pf-left-text .pf-common-heading{
+      max-width: 100%;
+    }
+    .pf-prduct-discount-section .pf-card-main .pf-left-text .pf-sub-heading{
+   font-size: 18px;
+    }
+    .pf-prduct-discount-section .pf-card-main .pf-input-area .pf-subscribe-btn{
+      margin-top: 16px;
+    }
+    .pf-prduct-discount-section .pf-card-main{
+      padding: 40px;
+    }
+
+}
+@media (max-width: 575px) {
+  .pf-prduct-discount-section .pf-card-main .pf-right-img img{
+    position: static;
+    width: 200px;
+    height: auto;
+    margin: 30px auto 0 auto;
+    }
+
+    .pf-prduct-discount-section .pf-card-main .pf-left-text .pf-common-heading{
+      max-width: 100%;
+    }
+    .pf-prduct-discount-section .pf-card-main .pf-left-text .pf-sub-heading{
+      font-size: 18px;
+    }
+    .pf-prduct-discount-section .pf-card-main .pf-input-area .pf-subscribe-btn{   
+      margin-top: 16px;
+    }
+    .pf-prduct-discount-section .pf-card-main {
+      padding: 40px 10px;
+  }
+}
+
+
+/* prduct discount section start */
+
+/* shop soluation css start */
+  .pf-shop-soluation-section{
+    padding: 80px 0;
+    background: #EEEEEE;
+    margin-top: 80px;
+  }
+  .pf-shop-soluation-section .pf-product-heading{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .pf-shop-soluation-section .pf-product-heading .pf-text .pf-common-heading,
+  .pf-shop-soluation-section .pf-product-heading .pf-text .pf-sub-heading{
+    text-align: end;
+  }
+
+  .pf-shop-soluation-section
+  .pf-shop-solution
+  .swiper-wrapper .swiper-slide .pf-product-card a img{
+      width: 100%;
+      height: 364.8px;
+      border-radius: 10px;
+      object-fit: cover;
+  }
+
+
+  @media(min-width:768px) and (max-width:991.98px){
+      .pf-shop-soluation-section .pf-product-heading .pf-text .pf-common-heading {
+          font-size: 54px;
+          max-width: 99%;
+      }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+      .pf-shop-soluation-section .pf-product-heading .pf-text .pf-common-heading {
+        font-size: 40px;  
+    }
+    
+  .pf-shop-soluation-section .pf-product-heading .pf-text .pf-common-heading,
+  .pf-shop-soluation-section .pf-product-heading .pf-text .pf-sub-heading{
+    text-align: end;
+    max-width: 100%;
+  }
+
+  }
+  @media (max-width: 575px) {
+      .pf-shop-soluation-section .pf-product-heading .pf-text .pf-common-heading {
+        font-size: 40px;
+    }
+    
+    .pf-shop-soluation-section .pf-product-heading .pf-text .pf-common-heading,
+    .pf-shop-soluation-section .pf-product-heading .pf-text .pf-sub-heading{
+      text-align: end;
+      max-width: 100%;
+    }
+
+  }
+/* shop soluation css end */
+
+
+
+/* bundle section start */
+.pf-bundle-section{
+  padding: 80px 0;
+}
+
+.pf-bundle-section .pf-bundle-slider .pf-bundle-card a img{
+  height: 576px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+ .pf-bundle-section .pf-bundle-heading .pf-common-heading {
+    font-size: 54px;
+    max-width: 100%;
+  }
+ .pf-bundle-section .pf-bundle-heading .pf-sub-heading{
+    max-width: 500px;
+  }
+}
+@media (min-width: 576px) and (max-width:767px) {
+ .pf-bundle-section .pf-bundle-heading .pf-common-heading {
+    font-size: 40px;
+    max-width: 100%;
+  }
+ .pf-bundle-section .pf-bundle-heading .pf-sub-heading{
+    max-width: 500px;
+  }
+}
+
+/* bundle section end */
+
+/* made section start */
+.pf-made-section{
+  padding: 80px 0;
+  background: #EEEEEE;
+}
+.pf-made-section .pf-made-heading .pf-text{
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+}
+.pf-made-section .pf-made-heading .pf-text .pf-common-heading{
+  text-align: end;
+  max-width: 100%;
+}
+
+.pf-made-section .pf-made-heading{
+  position: relative;
+}
+
+
+.pf-made-section .pf-made-heading img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.pf-made-section .pf-made-science-card a img{
+  border-radius: 15px;
+}
+
+.pf-made-section .pf-made-science-card .pf-text .pf-made-card-head{
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+.pf-made-section .pf-made-science-card .pf-text .pf-made-card-sub{
+  font-family: "ABC Favorit Variable";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  color: #fff;
+}
+.pf-made-section .pf-made-science-card .pf-text .pf-paragraph{
+  padding-bottom: 24px;
+  font-family: "ABC Favorit Variable";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 352px;
+  color: #fff;
+}
+
+.pf-made-section .pf-made-science-card .pf-text  .pf-made-btn{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+font-family: "Open Sans", serif;
+color: #fff;
+margin-bottom: 32px;
+}
+.pf-made-section .pf-made-science-card {
+  position: relative;
+}
+
+.pf-made-section .pf-made-science-card .pf-text {
+  position: absolute;
+  left: 32px;
+  bottom: 0;
+}
+.pf-made-section .pf-made-heading .pf-sub-heading{
+  padding-bottom: 79px;
+}
+
+
+@media (min-width: 768px) and (max-width:991px) {
+  .pf-made-section .pf-made-heading img{
+    display: none;
+  }
+
+  .pf-made-section .pf-container .pf-row-02{
+    gap: 30px;
+  }
+
+}
+@media (min-width: 576px) and (max-width:767px) {
+  .pf-made-section .pf-made-heading img{
+    display: none;
+  }
+  .pf-made-section .pf-container .pf-row-02{
+    gap: 30px;
+  }
+}
+@media (max-width: 576px){
+  .pf-made-section .pf-made-heading img{
+    display: none;
+  }
+  .pf-made-section .pf-container .pf-row-02{
+    gap: 30px;
+  }
+}
+/* made section end */
+
+
+
+
+/* review section css start */
+.pf-review-section{
+  padding: 80px 0;
+}
+
+.pf-review-section .pf-review-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pf-review-section .pf-rivew-slider .pf-review-card a img{
+  width: 100%;
+  height: 569px;
+  object-fit: cover;
+}
+
+
+.pf-review-section .pf-rivew-slider .pf-arrow-btns{
+  margin-top: 20px;
+}
+
+@media (max-width: 575px) {
+  .pf-review-section .pf-review-heading{
+    flex-direction: column;
+  }
+}
+/* review section css end */
+
+
+
+/* customer feedback section css start */
+.pf-customer-feedback-section{
+  padding: 80px 0;
+}
+.pf-customer-feedback-section .pf-feedback-heading .pf-text{
+  text-align: end;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+.pf-customer-feedback-section .pf-feedback-heading .pf-text .pf-common-heading,
+.pf-customer-feedback-section .pf-feedback-heading .pf-text .pf-sub-heading{
+  max-width: 100%;
+}
+
+.pf-customer-feedback-section .pf-feedback-slider .pf-feedback-card{
+  background: #D8D6D3;
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.pf-customer-feedback-section .pf-feedback-slider .pf-feedback-card .pf-sub-heading{
+  font-weight: 400;
+  color: #74663E;
+  line-height: 150%; /* 36px */
+  max-width: 352px;
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  margin-bottom: 24px;
+}
+  
+
+.client-info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.client-info .text p{
+  color: #74663E;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.pf-feedback-slider .pf-made-btn{
+  color: #74663E;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.pf-customer-feedback-section .pf-feedback-slider .pf-arrow-btns{
+  margin-top: 20px;
+}
+
+/* customer feedback section css end */
+
+
+/* faq section css start */
+
+/* ====== */
+.pf-faq-section {
+  padding: 80px 0;
+  background: #EEEEEE;
+}
+.pf-faq-section .pf-faq-heading .pf-text .pf-common-heading{
+  text-align: center;
+  max-width: 100%;
+}
+
+.pf-faq-section .pf-faq-heading .pf-text .pf-sub-heading{
+  text-align: center;
+  max-width: 332px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  color: #AAAAAA;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.pf-faq-section .pf-accordian-card .pf-head .pf-accordian-head{
+  font-family: "ABC Favorit Variable";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.pf-faq-section .pf-accordian-card{
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  border: 1px solid #74663E;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+
+.pf-faq-section .pf-accordian-card .pf-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.pf-faq-section .pf-accordian-card .pf-head .pf-accordian-head{
+font-family: "ABC Favorit Variable";
+font-size: 18px;
+font-weight: 700;
+line-height: 27px;
+color: #74663E;
+
+}
+
+.pf-faq-section .pf-accordian-card .pf-sub-acc{
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 720px;
+  color: #444444;
+}
+
+
+/* ========= */
+
+
+.pf-faq-section .pf-accordian-card .pf-sub-acc {
+  max-height: 0;
+  overflow: hidden;
+  color: #333;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.pf-faq-section .pf-accordian-card.active .pf-sub-acc {
+  max-height: 200px; 
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.pf-accordian-card.active .toggle-icon {
+  transform: rotate(45deg); 
+}
+
+
+.pf-faq-section .faqBtom{
+  width: 790px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.pf-faq-section .pf-accordian-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pf-faq-section .pf-accordian-bottom h3{
+font-family: "ABC Favorit Variable";
+font-size: 32px;
+font-weight: 700;
+line-height: 41.6px;
+color: #444444;
+padding-bottom: 4px;
+}
+.pf-faq-section .pf-accordian-bottom p{
+  font-family: "ABC Favorit Variable";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #AAAAAA;
+}
+/* faq section css end */
+
+
+
+/* news latter section css start */
+
+.pf-news-section{
+  padding: 80px 0;
+}
+
+.pf-news-section .pf-card-main .pf-left-text .pf-common-heading{
+  margin-bottom: 24px;
+  max-width: 400px;
+  color: #74663E;
+} 
+.pf-news-section .pf-card-main .pf-left-text .pf-sub-heading{
+  margin-bottom: 32px;
+  font-size: 16px;
+  max-width: 368px;
+} 
+.pf-new-img a img{
+  border-radius: 20px;
+}
+.pf-news-section .pf-card-main .pf-input-area{
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+  .pf-news-section .pf-container .pf-row{
+    gap: 30px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+  .pf-news-section .pf-container .pf-row{
+    gap: 30px;
+  }
+
+}
+@media (max-width: 575px) {
+  .pf-news-section .pf-container .pf-row{
+    gap: 30px;
+  }
+
+}
+
+.pf-news-section{
+  background: #fff;
+}
+
+@media(max-width:575px){
+  .pf-news-section .pf-card-main .pf-input-area{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pf-news-section .pf-card-main .pf-input-area input{
+    width: 100%;
+  }
+  .pf-news-section .pf-card-main .pf-input-area .pf-subscribe-btn{
+    width: 166px;
+    text-align: center;
+  }
+}
+
+/* news latter section css end */
+
