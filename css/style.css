@@ -127,7 +127,11 @@ img {
     border-radius: 10px;
   }
   .pf-essential-product-section .pf-product-card .pf-product-title,
-  .pf-shop-soluation-section .pf-product-card .pf-product-title{
+  .pf-shop-soluation-section .pf-product-card .pf-product-title,
+  .pf-benifit-section .pf-section-accordian .pf-accrdians .pf-product-title,
+  .pf-team-section .pf-team-text .text .pf-product-title,
+  .pf-choose-section .pf-tabs .pf-product-title
+  {
     color:#444;
     font-family: "ABC Favorit Variable";
     font-size: 22px;
@@ -135,9 +139,38 @@ img {
     font-weight: 700;
     line-height: 150%; 
   }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .pf-essential-product-section .pf-product-card .pf-product-title,
+    .pf-shop-soluation-section .pf-product-card .pf-product-title,
+    .pf-benifit-section .pf-section-accordian .pf-accrdians .pf-product-title,
+    .pf-team-section .pf-team-text .text .pf-product-title,
+    .pf-choose-section .pf-tabs .pf-product-title
+    {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 575px){
+    .pf-essential-product-section .pf-product-card .pf-product-title,
+    .pf-shop-soluation-section .pf-product-card .pf-product-title,
+    .pf-benifit-section .pf-section-accordian .pf-accrdians .pf-product-title,
+    .pf-team-section .pf-team-text .text .pf-product-title,
+    .pf-choose-section .pf-tabs .pf-product-title
+    {
+      font-size: 18px;
+    }
+  }
+  .pf-benifit-section .pf-section-accordian .pf-accrdians .pf-product-title{
+    font-size: 20px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
   .pf-essential-product-section .pf-product-card .pf-product-sub-title,
   .pf-shop-soluation-section .pf-product-card .pf-product-sub-title,
-  .pf-made-section .pf-made-science-card .pf-text .pf-made-card-head
+  .pf-made-section .pf-made-science-card .pf-text .pf-made-card-head,
+  .pf-benifit-section .pf-section-accordian .pf-accordian-open .pf-product-sub-title,
+  .pf-team-section .pf-team-text .text .pf-product-sub-title,
+  .pf-choose-section .pf-left-text .pf-product-sub-title
   {
     color:#AAA;
     font-family: "ABC Favorit Variable";
@@ -145,6 +178,11 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
+  }
+  .pf-benifit-section .pf-section-accordian .pf-accordian-open .pf-product-sub-title{
+    font-size: 14px;
+    max-width: 616px;
+    padding-bottom: 10px;
   }
   .pf-essential-product-section .pf-product-card .pf-product-price,
   .pf-shop-soluation-section .pf-product-card .pf-product-price{
@@ -193,6 +231,10 @@ img {
     font-size: 54px;
     max-width: 51%;
   }
+  .pf-essential-product-section .pf-product-heading .pf-text .pf-common-heading{
+    max-width: 100%;
+    font-size: 35px;
+  }
 }
 
 
@@ -207,7 +249,7 @@ img {
   .pf-product-slide .pf-arrow-btns,
   .pf-shop-solution .pf-arrow-btns,
   .pf-bundle-section .pf-arrow-btns,
-  .pf-review-section .pf-arrow-btns{
+  .pf.pf-arrow-btns{
     margin-top: 20px;
   }
   .pf-essential-product-section .pf-product-heading,
@@ -218,6 +260,10 @@ img {
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
+  }
+  .pf-essential-product-section .pf-product-heading .pf-text .pf-common-heading{
+    max-width: 100%;
+    font-size: 30px;
   }
 
 }
@@ -249,8 +295,10 @@ img {
   padding: 3px 18px;
   margin-top: 20px;
 }
-
-
+  .pf-essential-product-section .pf-product-heading .pf-text .pf-common-heading{
+    max-width: 100%;
+    font-size: 30px;
+  }
 }
 
 /*product css end */
@@ -433,7 +481,6 @@ position: absolute;
   }
 }
 
-
 /* prduct discount section start */
 
 /* shop soluation css start */
@@ -546,12 +593,30 @@ position: absolute;
   max-width: 100%;
 }
 
-.pf-made-section .pf-made-heading{
+.pf-made-section .pf-made-heading,
+.pf-gallery-section .pf-made-heading{
   position: relative;
 }
 
 
-.pf-made-section .pf-made-heading img{
+@media (min-width: 768px) and (max-width:991px) {
+  .pf-gallery-section .pf-made-heading img{
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width:767px) {
+  .pf-gallery-section .pf-made-heading img{
+    display: none;
+  }
+}
+@media (max-width: 576px){
+    .pf-gallery-section .pf-made-heading img{
+    display: none;
+  }
+}
+
+.pf-made-section .pf-made-heading img,
+.pf-gallery-section .pf-made-heading img{
   position: absolute;
   left: 0;
   top: 0;
@@ -637,6 +702,28 @@ margin-bottom: 32px;
 
 
 /* review section css start */
+
+.pf-review-section .pf-arrow-btns .pf-next{
+  margin-right: 15px;
+}
+
+.pf-review-section .pf-rivew-slider .swiper-wrapper .swiper-slide{
+  height: 622px;
+}
+.pf-review-section .pf-rivew-slider .swiper-wrapper .swiper-slide .pf-review-card{
+  height: 100%;
+}
+
+.pf-review-section .pf-rivew-slider .swiper-wrapper .swiper-slide .pf-review-card a{
+  display: block;
+  height: 90%;
+  transition: height 0.5s;
+}
+
+.pf-review-section .pf-rivew-slider .swiper-wrapper .swiper-slide-active .pf-review-card a{
+  height: 100%;
+}
+
 .pf-review-section{
   padding: 80px 0;
 }
@@ -648,13 +735,13 @@ margin-bottom: 32px;
 
 .pf-review-section .pf-rivew-slider .pf-review-card a img{
   width: 100%;
-  height: 569px;
+  height: 100%;
   object-fit: cover;
 }
 
 
 .pf-review-section .pf-rivew-slider .pf-arrow-btns{
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 @media (max-width: 575px) {
@@ -915,3 +1002,670 @@ padding-bottom: 4px;
 
 /* news latter section css end */
 
+
+
+/* ==========================================
+              prouct page details
+==============================================*/
+
+
+/* product details section start */
+  .product_details_section .review .pf-product_text,
+  .pf-team-section .pf-team-warapper .pf-product_text,
+  .pf-choose-section .pf-left-text .pf-product_text{
+    color:#444;
+    font-family: "ABC Favorit Variable";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+  }
+
+  @media(min-width:768px) and (max-width:991.98px){
+    .product_details_section .review .pf-product_text,
+    .pf-team-section .pf-team-warapper .pf-product_text,
+    .pf-choose-section .pf-left-text .pf-product_text{
+      font-size: 35px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .product_details_section .review .pf-product_text,
+    .pf-team-section .pf-team-warapper .pf-product_text,
+    .pf-choose-section .pf-left-text .pf-product_text{
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 575px){
+    .product_details_section .review .pf-product_text,
+    .pf-team-section .pf-team-warapper .pf-product_text,
+    .pf-choose-section .pf-left-text .pf-product_text{
+      font-size: 30px;
+    }
+  }
+
+  .product_details_section .review .pf-star .icon span{
+    color: #666;
+    text-align: center;
+    font-family: "ABC Favorit Variable";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .product_details_section .review .pf-star .icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .product_details_section .review .pf-star{
+    margin-bottom: 8px;
+  }
+  
+  .product_details_section .review .pf-price{
+    color:#444;
+    font-family: "ABC Favorit Variable";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    margin-bottom: 15px;
+  }
+    
+  .product_details_section .review .pf-price span{
+    color: #AAA;
+  }
+
+  .product_details_section .review .pf-delivery .pf-normal-text{
+    color: #666;
+    font-family: "ABC Favorit Variable";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; 
+    text-align: center;
+    padding: 8px 0;
+  }
+  .product_details_section .review .pf-delivery{
+    background: #F8F8F8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .product_details_section{
+    padding: 80px 0;
+    background: #EEE;
+  }
+  .product_details_section .review .pf-quality{
+    margin-top: 31px;
+    margin-bottom: 10px;
+  }
+
+  .product_details_section .review .pf-quality .pf-normal-text
+  .product_details_section .pf-container .pf-row .pf-top-buttons .pf-normal-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 8px;
+  }
+  .product_details_section .review .pf-quality .pf-btn{
+    background: #E2E2E2;
+    padding: 12px 24px;
+    border-radius: 7px;
+    margin-right: 16px;
+    transition: all linear .3s;
+    margin-top: 8px;
+  }
+  .product_details_section .review .pf-quality .pf-btn:hover{
+    background: #74663E;
+  }
+  .product_details_section .review .pf-quality .pf-btn:hover .pf-btn-text{
+    color: #fff;
+  }
+  .product_details_section .review .pf-quality .pf-btn .pf-btn-text,
+  .product_details_section .review .cart-btn .pf-btn-text,
+  .product_details_section .review .cart-btn2 .pf-btn-text{
+    color:#666666;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    transition: all linear .3s;
+  }
+
+  .product_details_section .review .pf-quality .pf-btn p{
+    font-size: 16px !important;
+  }
+  
+  .product_details_section .review .cart-btn .pf-btn-text,
+  .product_details_section .review .cart-btn .pf-btn-text{
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    background: #74663E;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 16px;
+  }
+  .product_details_section .review .cart-btn:hover .pf-btn-text{
+    color: #ffff;
+    background: #473e26;
+  }
+  .product_details_section .review .cart-btn2:hover .pf-btn-text{
+    color: #FFF;
+    background: #74663E;
+  }
+
+  .product_details_section .review .cart-btn2 .pf-btn-text{
+    color: #74663E;
+    text-align: center;
+    padding: 12px 0;
+    background: #EEEEEE;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 16px;
+    border: 1px solid #74663E;
+  }
+
+  
+  .product_details_section .review .pf-discount .pf-normal-text{
+    color: #74663E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 350;
+    line-height: 120%; /* 31.2px */
+    margin-bottom: 14px;
+  }
+  
+  .product_details_section .review .pf-month .pf-normal-text{
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .product_details_section .review .pf-month{
+    border-radius: 7px;
+    border: 1px solid #74663E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  
+  .product_details_section .review .pf-discount .pf-normal-text span{
+    font-weight: 700;
+  }
+
+  .product_details_section .review .pf-listing ul li,
+  .product_details_section .review .pf-instock{
+    color: #666;
+    font-family: "ABC Favorit Variable";
+    font-size: 15.005px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; 
+  }
+
+  .product_details_section .review .pf-listing ul li svg{
+    margin-right: 9px;
+  }
+  .product_details_section .review .pf-listing ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 11px;
+  }
+
+  .product_details_section .review a{
+    color: #74663E;
+    font-family: "ABC Favorit Variable";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 16.5px */
+    margin-bottom: 10px;
+  }
+
+  .product_details_section .review .pf-instock{
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .product_details_section .review .pf-instock .pf-instrock-text{
+    font-size: 13px;
+  }
+  .product_details_section .review .pf-instock svg{
+    margin-right: 5px;
+  }
+
+  .product_details_section .review .pf-pymant{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 23px;
+  }
+
+  .product_details_section .myProductSwiper .swiper-wrapper .swiper-slide-thumb-active{
+    border: 1px solid #666;
+    border-radius: 7px;
+  }
+
+  .product_details_section .myProductSwiper .swiper-wrapper .bottomSlider img{
+      border-radius: 7px;
+  }
+  .product_details_section .myProductSwiper .swiper-wrapper .bottomSlider {
+    margin: 25px 0;
+  }
+
+  .product_details_section .myProductSwiper2 .swiper-wrapper .topSlider a img{
+    border-radius: 10px;
+  }
+  
+  .product_details_section .review .pf-last-delivery{
+    background: #E2E2E2;
+    padding: 36px 120px;
+    border-radius: 10px;
+  }
+
+  .product_details_section .pf-bottom-details .btns ul{
+    display: flex;
+    gap: 24px;
+  }
+  .product_details_section .pf-bottom-details .btns ul li{
+    cursor: pointer;
+    color: #444;
+    font-family: "ABC Favorit Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+
+}
+.product_details_section .pf-bottom-details .pf-text-area p {
+  color:#666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  margin-top: 24px;
+  max-width: 557px;
+}
+
+.product_details_section .pf-bottom-details .pf-text-area {
+  height: 108px !important;
+  max-height: 100%;
+}
+
+.product_details_section .pf-bottom-details .pf-text-area p {
+  display: none;
+}
+.product_details_section .pf-bottom-details .pf-text-area p.active {
+  display: block;
+}
+
+.pf-bottom-details .btns ul .active{ 
+  border-bottom: 1px solid #444444;
+}
+
+
+.product_details_section .pf-top-buttons{
+  display: flex;
+  margin-bottom: 25px;
+  gap: 8px;
+}
+
+
+/* responsive */
+@media (min-width: 1400px) {
+}
+@media(min-width:1200px) and (max-width:1399.98px){ 
+  .product_details_section .review .pf-quality .pf-btn{
+    padding: 10px 14px;
+  }
+}
+
+@media(min-width:992px) and (max-width:1199.98px){
+  .product_details_section .review .pf-quality .pf-btn{
+    padding: 10px 14px;
+  }
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+  .product_details_section .review .pf-product_text{
+    font-size: 30px;
+  }
+
+  .product_details_section{
+    padding: 60px 0;
+  }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .product_details_section .review .pf-product_text{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .product_details_section .review .pf-discount .pf-normal-text{
+    font-size: 22px;
+  }
+
+  .product_details_section{
+    padding: 60px 0;
+  }
+
+}
+
+@media (max-width: 575px){
+  .product_details_section .review .pf-product_text{
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .product_details_section .review .pf-discount .pf-normal-text{
+    font-size: 22px;
+  }
+
+  .product_details_section .review .pf-listing ul {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 11px;
+    flex-direction: column;
+  }
+
+  
+  .product_details_section{
+    padding: 60px 0;
+  }
+}
+/* product details section end */
+
+
+/* benifit section section css start */
+
+.pf-benifit-section a img{
+  object-fit: cover;
+}
+
+.pf-benifit-section .pf-section-head .pf-sub-head{
+  color: #AAA;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 36px */
+}
+.pf-benifit-section .pf-section-head .pf-common-heading{
+  margin-bottom: 40px;
+}
+
+.pf-benifit-section .pf-section-accordian .pf-accrdians{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+/* ========= */
+
+.pf-accordian-open {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.pf-section-accordian.active .pf-accordian-open {
+  max-height: 200px;
+}
+
+.pf-section-accordian .pf-accrdians {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pf-section-accordian .pf-accrdians svg {
+  transition: transform 0.3s ease;
+}
+
+.pf-section-accordian .icon-minus {
+  display: none;
+}
+
+.pf-section-accordian.active .icon-minus {
+  display: block;
+}
+
+.pf-section-accordian.active .icon-plus {
+  display: none;
+}
+
+
+.pf-section-accordian .icon-plus,
+.pf-section-accordian .icon-minus {
+  transition: transform 0.3s ease;
+}
+
+.pf-section-accordian.active .icon-plus,
+.pf-section-accordian .icon-minus {
+  transform: rotate(180deg);
+}
+
+.pf-section-accordian{
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+
+.pf-benifit-section{
+  padding: 40px 0;
+}
+
+
+@media(min-width:768px) and (max-width:991.98px){
+  .pf-benifit-section .pf-container .pf-row .pf-col-lg-6{
+    order: 1;
+    margin-top: 20px;
+  }
+  .pf-benifit-section .pf-section-head .pf-sub-head{
+    font-size: 26px;
+  }
+
+  .pf-benifit-section .pf-section-head .pf-common-heading{
+    font-size: 35px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pf-benifit-section .pf-container .pf-row .pf-col-lg-6{
+    order: 1;
+    margin-top: 20px;
+  }
+  .pf-benifit-section .pf-section-head .pf-sub-head{
+    font-size: 24px;
+  }
+
+  .pf-benifit-section .pf-section-head .pf-common-heading{
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .pf-benifit-section .pf-section-accordian .pf-accrdians .pf-product-title{
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px){
+  .pf-benifit-section .pf-container .pf-row .pf-col-lg-6{
+    order: 1;
+    margin-top: 20px;
+  }
+  .pf-benifit-section .pf-section-head .pf-sub-head{
+    font-size: 22px;
+  }
+
+  .pf-benifit-section .pf-section-head .pf-common-heading{
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .pf-benifit-section .pf-section-accordian .pf-accrdians .pf-product-title{
+    font-size: 18px;
+  }
+}
+
+
+/* benifit section section css end */
+
+/* team section css start */
+
+.pf-team-section .pf-team-warapper .pf-product_text{
+  line-height: 120%; /* 46.8px */
+  color: #444;
+  max-width: 570px;
+  margin-bottom: 65px;
+}
+
+.pf-team-section .pf-team-text{
+  display: flex;
+  gap: 40px;
+}
+
+.pf-team-section .pf-team-text .text .pf-product-title{
+  margin-bottom: 16px;
+}
+.pf-team-section{
+  padding: 40px 0;
+}
+
+.pf-team-section .pf-team-text .text .pf-product-sub-title{
+  color: #666;
+  max-width: 540px;
+}
+.pf-team-section .pf-team-text{
+  margin-bottom: 16px;
+}
+
+.pf-team-section .pf-team-img img{
+  object-fit: cover;
+}
+.pf-team-section .pf-container .pf-row{
+  align-items: center;
+}  
+
+
+/* team section css end */
+
+
+/* gallery section start */
+.pf-gallery-section .pf-row-02 a img{
+  border-radius: 10px;
+}
+.pf-gallery-section{
+  padding: 40px 0;
+}
+
+/* gallery section end */
+
+
+/* choose nation section css start */
+.pf-choose-section{
+  padding: 40px 0;
+}
+
+.pf-choose-section .pf-left-text .pf-product_text{
+  margin-bottom: 24px;
+  margin-left: 40px;
+}
+
+.pf-choose-section .pf-left-text .pf-product-sub-title{
+  color: #444;
+  margin-left: 40px;
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+  .pf-choose-section .pf-left-text .pf-product-sub-title{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .pf-choose-section .pf-left-text .pf-product_text{
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pf-choose-section .pf-left-text .pf-product-sub-title{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .pf-choose-section .pf-left-text .pf-product_text{
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px){
+  .pf-choose-section .pf-left-text .pf-product-sub-title{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .pf-choose-section .pf-left-text .pf-product_text{
+    margin-left: 0;
+  }
+}
+
+
+.pf-choose-section .pf-tabs{
+  display: flex;
+  padding: 0;
+}
+.pf-choose-section .pf-tabs h4{
+  width: 100%;
+  text-align: center;
+}
+
+.pf-choose-section .pf-tabs .pf-product-title{
+  color: #444;
+  text-align: center;
+  padding: 32px 0;
+  width: 100%;
+  cursor: pointer;
+}
+.pf-choose-section .pf-tabs .active{
+  border-bottom: 0 !important;
+}
+
+.pf-choose-section .pf-tabs .pf-product-title{
+border-bottom: 1px solid #000;
+border-left: 1px solid #000;
+border-right: 1px solid #000;
+}
+.pf-choose-section .pf-tabs .pf-product-title:first-child{
+  border-left: 0;
+  border-right: 0;
+}
+.pf-choose-section .pf-tabs .pf-product-title:nth-last-child(2),
+.pf-choose-section .pf-tabs .pf-product-title:nth-last-child(1){
+  border-right: 0;
+}
+.pf-choose-section .pf-container{
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.pf-choose-section .pf-tabs {
+ padding-bottom: 48px;
+}
+
+.pf-choose-section .pf-right-section a img{
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 45px;
+}
+/* choose nation section css end */
