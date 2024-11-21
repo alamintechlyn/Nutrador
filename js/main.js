@@ -285,29 +285,39 @@ document.addEventListener("DOMContentLoaded", function() {
 // choose section isotop
 
 
-$(document).ready(function(){
-  // Initialize Isotope
-  var $grid = $('.pf-choose-section .isotope-grid').isotope({
-    itemSelector: '.pf-choose-section .isotope-grid .pf-col-lg-6',
-    layoutMode: 'fitRows'
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.pf-product-title');
+    const sections = document.querySelectorAll('.isotope-grid > div');
+
+    // Function to show and hide sections
+    function showSection(filterValue) {
+      sections.forEach(section => {
+        if (section.classList.contains(filterValue.substring(1))) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+
+    // Event listener for tabs
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        const filterValue = this.getAttribute('data-filter');
+        showSection(filterValue);
+      });
+    });
+
+    // Show the first tab and first section on page load
+    tabs[0].classList.add('active');
+    showSection(tabs[0].getAttribute('data-filter'));
   });
 
-  // Filter items on tab click
-  $('.pf-choose-section .pf-tabs').on('click', 'h4', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
 
-    // Show/hide content based on filter
-    $('.pf-choose-section .isotope-grid .pf-col-lg-6').hide(); // Hide all
-    $(filterValue).show(); // Show filtered
-  });
 
-  // Add active class to clicked tab
-  $('.pf-choose-section .pf-tabs h4').on('click', function(){
-    $('.pf-choose-section .pf-tabs h4').removeClass('active');
-    $(this).addClass('active');
-  });
-});
+
 
 
 
